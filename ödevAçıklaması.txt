@@ -1,0 +1,32 @@
+                                              ADVANCED PROGRAMMİNG HOMEWORK EXPLANATİON
+
+
+                   
+
+1-First of all we created a method which name is convertImageToByteArray that read image and convert it to byte array
+2- Then we create 3 int[] arrays which is for color image and their name is R,G,B respectively 
+this array's size is 514*98 because the original images width and height were 514 and 98 respectively.
+3-then we created a method which name is convertColorImageToGrayScale that use a for loop and 
+fill R,G and B arrays.
+3- And then, for convert color image to gray scale we made a mathematical operation.
+4- for one pixel of gray scale we made this operation ==> pixels[0]=R[0]*0.3+G[0]*0.6+B[0]*0.1; // this is calculating one pixel of gray scale
+5- And then we create a method which name is checkTrashHold that is using a for loop and check each pixel of gray scale array
+if pixel of gray scale is bigger than trashold we add 0 to new array,otherwise we add 255 to new array(name of this array is pix)
+6- And then for read horizantal and vertical to have a histogram ı created an array which name is array[height][width] convert the array which holds 0 and 255 
+7- And then we fill this array with 0 and 1 for read vertical and horizantal.
+8-For readHorizantal we created an ArrayList which name is list and in the for loop we read array[][] and sum all number from right to left and add to list that summation.
+8-For readVertical we created an ArrayList which name is list2 and in the for loop we read array[][] and sum all number from top to bottom and add to list that summation.
+9- In conclusion, we created 5 panels for original image,gray scale image,binary image,vertical histogram and horizantal histogram.
+and then we put them into the JtabbedPane and put JTabbedPane into the Frame.
+
+// We made a group work and we try many times to have the right result until we get. each member of group is worked and discuss for each part
+
+// What we could do
+  1- we could do a panel for original image
+  2- we could do a panel for GrayScale image
+  3- we could do a panel for Binarized image
+  3- we could do a panel for Vertical histogram  
+  3- we could do a panel for Horizantal histogram
+
+// What we could not do
+1- We could not do the redbox for each digit and character (we worked on it but could not do) 
